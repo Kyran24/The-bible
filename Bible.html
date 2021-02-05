@@ -6,207 +6,185 @@
 <link rel="icon" href="images/bible.ico" type="image/x-icon"> 
 <link rel="stylesheet" type="text/css" href="css/style.css">
 <script type="text/javascript" src="js/win.js"></script>
+<script type="text/javascript" src="js/menu.js"></script>
 </head>
 
 <body>
-<button onclick="topFunction()" id="myBtn" title="Go to top"><img src="images/top.png"></button>
-<script type="text/javascript" src="js/mybtn.js"></script>
+<div id="main">
+<div id="main2">
 <center>
-<p class="glow large"><b>The Bible</b></p>
+<p class="glow biblelarge"><b>The Bible</b></p>
 <img class="img" src="Images/bible.ico" alt="bible image" >
 <br>
 <br>
-<button class="refresh" onclick="go()" onMouseover="window.status='open window';return true" onMouseout="window.status=''"><img src="images/about.png"></button>
+<span class="refresh" onclick="go()" onMouseover="window.status='open window';return true" onMouseout="window.status=''"><img src="images/about.png"></span>
 <br>
 <br>
+<p><span onclick="openNav()" class="refresh"><b>Old testament</b></span></p>
+<p><span onclick="openNav2()" class="refresh"><b>New testament</b></span></p>
+<h1>The book opens here</h1>
+<p><img src="images/down.png"></p>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img src="images/close.png"></a>
 <hr>
-<h2><b>Testaments</b></h2>
-<table> 
-    <tbody><tr>
-      <th>Old Testament <img src="images/testament.png"></th>
-      <th>New Testament <img src="images/testament.png"></th>
-    </tr>
-   <tr>
-      <td><a href="Old testament/Genesis (Old).html" class="refresh"><b>Genesis</b></a></td>
-      <td><a href="New testament/Matthew (New).html" class="refresh"><b>Matthew</b></a></td>
-    </tr>
-   <tr>
-      <td><a href="Old testament/Exodus (Old).html" class="refresh"><b>Exodus</b></a></td>
-      <td><a href="New testament/Mark (New).html" class="refresh"><b>Mark</b></a>
-</td>
-    </tr>
-   <tr>
-      <td><a href="Old testament/Leviticus (Old).html" class="refresh"><b>Leviticus</b></a></td>
-      <td><a href="New testament/Luke (New).html" class="refresh"><b>Luke</b></a></td>
-    </tr>
-   <tr>
-      <td><a href="Old testament/Deuteronomy (Old).html" class="refresh"><b>Deuteronomy</b></a>
-</td>
-      <td><a href="New testament/John (New).html" class="refresh"><b>John</b></a></td>
-    </tr>
-   <tr>
-      <td><a href="Old testament/Joshua (Old).html" class="refresh"><b>Joshua</b></a></td>
-      <td><a href="New testament/Acts (New).html" class="refresh"><b>Acts</b></a>
-</td>
-    </tr>
-   <tr>
-      <td><a href="Old testament/Judges (Old).html" class="refresh"><b>Judges</b></a></td>
-      <td><a href="New testament/Romans (New).html" class="refresh"><b>Romans</b></a></td>
-    </tr>
-   <tr>
-      <td><a href="Old testament/Ruth (Old).html" class="refresh"><b>Ruth</b></a></td>
-      <td><a href="New testament/1 Corinthians (New).html" class="refresh"><b>1 Corinthians</b></a>
-</td>
-    </tr>
-   <tr>
-      <td><a href="Old testament/1 Samuel (Old).html" class="refresh"><b>1 Samuel</b></a></td>
-      <td><a href="New testament/2 Corinthians (New).html" class="refresh"><b>2 Corinthians</b></a>
-</td>
-    </tr>
-   <tr>
-      <td><a href="Old testament/2 Samuel (Old).html" class="refresh"><b>2 Samuel</b></a></td>
-      <td><a href="New testament/Galatians (New).html" class="refresh"><b>Galatians</b></a>
-</td>
-    </tr>
-   <tr>
-      <td><a href="Old testament/1 Kings (Old).html" class="refresh"><b>1 Kings</b></a>
-</td>
-      <td><a href="New testament/Ephesians (New).html" class="refresh"><b>Ephesians</b></a>
-</td>
-    </tr>
-   <tr>
-      <td><a href="Old testament/2 Kings (Old).html" class="refresh"><b>2 Kings</b></a></td>
-      <td><a href="New testament/Philippians (New).html" class="refresh"><b>Philippians</b></a>
-</td>
-    </tr>
-   <tr>
-      <td><a href="Old testament/1 Chronicles (Old).html" class="refresh"><b>1 Chronicles</b></a></td>
-      <td><a href="New testament/Colossians (New).html" class="refresh"><b>Colossians</b></a>
-</td>
-    </tr>
-   <tr>
-      <td><a href="Old testament/Ezra (Old).html" class="refresh"><b>Ezra</b></a></td>
-      <td><a href="New testament/1 Thessalonians (New).html" class="refresh"><b>1 Thessalonians</b></a>
-</td>
-    </tr>
-   <tr>
-      <td><a href="Old testament/Nehemiah (Old).html" class="refresh"><b>Nehemiah</b></a></td>
-      <td><a href="New testament/2 Thessalonians (New).html" class="refresh"><b>2 Thessalonians</b></a>
-</td>
-    </tr>
-   <tr>
-      <td><a href="Old testament/Esther (Old).html" class="refresh"><b>Esther</b></a></td>
-      <td><a href="New testament/1 Timothy (New).html" class="refresh"><b>1 Timothy</b></a></td>
-    </tr>
-   <tr>
-      <td><a href="Old testament/Job (Old).html" class="refresh"><b>Job</b></a></td>
-      <td><a href="New testament/2 Timothy (New).html" class="refresh"><b>2 Timothy</b></a>
-</td>
-    </tr>
-   <tr>
-      <td><a href="Old testament/Psalms (Old).html" class="refresh"><b>Psalms</b></a></td>
-      <td><a href="New testament/Titus (New).html" class="refresh"><b>Titus</b></a>
-</td>
-    </tr>
-   <tr>
-      <td><a href="Old testament/Proverbs (Old).html" class="refresh"><b>Proverbs</b></a></td>
-      <td><a href="New testament/Philemon (New).html" class="refresh"><b>Philemon</b></a>
-</td>
-    </tr>
-   <tr>
-      <td><a href="Old testament/Ecclesiastes (Old).html" class="refresh"><b>Ecclesiastes</b></a></td>
-      <td><a href="New testament/Hebrews (New).html" class="refresh"><b>Hebrews</b></a>
-</td>
-    </tr>
-   <tr>
-      <td><a href="Old testament/Song of solomon (Old).html"  class="refresh"><b>Song of solomon</b></a>
-</td>
-      <td><a href="New testament/James (New).html" class="refresh"><b>James</b></a></td>
-    </tr>
-   <tr>
-      <td><a href="Old testament/Isaiah (Old).html" class="refresh"><b>Isaiah</b></a></td>
-      <td><a href="New testament/1 Peter (New).html" class="refresh"><b>1 Peter</b></a>
-</td>
-    </tr>
-   <tr>
-      <td><a href="Old testament/Jeremiah (Old).html" class="refresh"><b>Jeremiah</b></a>
-</td>
-      <td><a href="New testament/2 Peter (New).html" class="refresh"><b>2 Peter</b></a></td>
-    </tr>
-   <tr>
-      <td><a href="Old testament/Lamentations (Old).html" class="refresh"><b>Lamentations</b></a>
-</td>
-      <td><a href="New testament/1 John (New).html" class="refresh"><b>1 John</b></a></td>
-    </tr>
-   <tr>
-      <td><a href="Old testament/Ezekiel (Old).html" class="refresh"><b>Ezekiel</b></a>
-</td>
-      <td><a href="New testament/2 John (New).html" class="refresh"><b>2 John</b></a>
-</td>
-    </tr>
-   <tr>
-      <td><a href="Old testament/Daniel (Old).html" class="refresh"><b>Daniel</b></a></td>
-      <td><a href="New testament/3 John (New).html" class="refresh"><b>3 John</b></a></td>
-    </tr>
-   <tr>
-      <td><a href="Old testament/Hosea (Old).html" class="refresh"><b>Hosea</b></a></td>
-      <td><a href="New testament/Jude (New).html" class="refresh"><b>Jude</b></a></td>
-    </tr>
-   <tr>
-      <td><a href="Old testament/Joel (Old).html" class="refresh"><b>Joel</b></a></td>
-      <td><a href="New testament/Revelation (New).html" class="refresh"><b>Revelation</b></a>
-</td>
-    </tr>
-   <tr>
-      <td><a href="Old testament/Amos (Old).html" class="refresh"><b>Amos</b></a></td>
-      <td></td>
-    </tr>
-   <tr>
-      <td><a href="Old testament/Obadiah (Old).html" class="refresh"><b>Obadiah</b></a>
-</td>
-      <td></td>
-    </tr>
-   <tr>
-      <td><a href="Old testament/Jonah (Old).html" class="refresh"><b>Jonah</b></a></td>
-      <td></td>
-    </tr>
-   <tr>
-      <td><a href="Old testament/Micah (Old).html" class="refresh"><b>Micah</b></a></td>
-      <td></td>
-    </tr>
-   <tr>
-      <td><a href="Old testament/Nahum (Old).html" class="refresh"><b>Nahum</b></a>
-</td>
-      <td></td>
-    </tr>
-   <tr>
-      <td><a href="Old testament/Habakkuk (Old).html" class="refresh"><b>Habakkuk</b></a>
-</td>
-      <td></td>
-    </tr>
-   <tr>
-      <td><a href="Old testament/Zephaniah (Old).html" class="refresh"><b>Zephaniah</b></a></td>
-      <td></td>
-    </tr>
-   <tr>
-      <td><a href="Old testament/Haggai (Old).html" class="refresh"><b>Haggai</b></a>
-</td>
-      <td></td>
-    </tr>
-   <tr>
-      <td><a href="Old testament/Zechariah (Old).html" class="refresh"><b>Zechariah</b></a>
-</td>
-      <td></td>
-    </tr>
-   <tr>
-      <td><a href="Old testament/Malachi (Old).html" class="refresh"><b>Malachi</b></a></td>
-      <td></td>
-    </tr>
-</tbody></table>
+<h1>Search</h1>	<input id="searchbar" onkeyup="search_books()" type="text" name="search" placeholder="Search old testament..">
+<p class="psearch"><b>Note: </b>If searched and not seen, try scrolling down</p> 
+<hr>
+<ul id='list'>
+<li class="books"><a href="Old testament/Genesis (Old).html" class="refresh" target="Bookreader"><b>Genesis</b></a></li>
+<br>
+<li class="books"><a href="Old testament/Exodus (Old).html" class="refresh" target="Bookreader"><b>Exodus</b></a></li>
+<br>
+<li class="books"><a href="Old testament/Leviticus (Old).html" class="refresh" target="Bookreader"><b>Leviticus</b></a></li>
+<br>
+<li class="books"><a href="Old testament/Deuteronomy (Old).html" class="refresh" target="Bookreader"><b>Deuteronomy</b></a></li>
+<br>
+<li class="books"><a href="Old testament/Joshua (Old).html" class="refresh" target="Bookreader"><b>Joshua</b></a></li>
+<br>
+<li class="books"><a href="Old testament/Judges (Old).html" class="refresh" target="Bookreader"><b>Judges</b></a></li>
+<br>
+<li class="books"><a href="Old testament/Ruth (Old).html" class="refresh" target="Bookreader"><b>Ruth</b></a></li>
+<br>
+<li class="books"><a href="Old testament/1 Samuel (Old).html" class="refresh" target="Bookreader"><b>1 Samuel</b></a></li>
+<br>
+<li class="books"><a href="Old testament/2 Samuel (Old).html" class="refresh" target="Bookreader"><b>2 Samuel</b></a></li>
+<br>
+<li class="books"><a href="Old testament/1 Kings (Old).html" class="refresh" target="Bookreader"><b>1 Kings</b></a></li>
+<br>
+<li class="books"><a href="Old testament/2 Kings (Old).html" class="refresh" target="Bookreader"><b>2 Kings</b></a></li>
+<br>
+<li class="books"><a href="Old testament/1 Chronicles (Old).html" class="refresh" target="Bookreader"><b>1 Chronicles</b></a></li>
+<br>
+<li class="books"><a href="Old testament/Ezra (Old).html" class="refresh" target="Bookreader"><b>Ezra</b></a></li>
+<br>
+<li class="books"><a href="Old testament/Nehemiah (Old).html" class="refresh" target="Bookreader"><b>Nehemiah</b></a></li>
+<br>
+<li class="books"><a href="Old testament/Esther (Old).html" class="refresh" target="Bookreader"><b>Esther</b></a></li>
+<br>
+<li class="books"><a href="Old testament/Job (Old).html" class="refresh" target="Bookreader"><b>Job</b></a></li>
+<br>
+<li class="books"><a href="Old testament/Psalms (Old).html" class="refresh" target="Bookreader"><b>Psalms</b></a></li>
+<br>
+<li class="books"><a href="Old testament/Proverbs (Old).html" class="refresh" target="Bookreader"><b>Proverbs</b></a></li>
+<br>
+<li class="books"><a href="Old testament/Ecclesiastes (Old).html" class="refresh" target="Bookreader"><b>Ecclesiastes</b></a></li>
+<br>
+<li class="books"><a href="Old testament/Song of solomon (Old).html"  class="refresh" target="Bookreader"><b>Song of solomon</b></a></li>
+<br>
+<li class="books"><a href="Old testament/Isaiah (Old).html" class="refresh" target="Bookreader"><b>Isaiah</b></a></li>
+<br>
+<li class="books"><a href="Old testament/Jeremiah (Old).html" class="refresh" target="Bookreader"><b>Jeremiah</b></a></li>
+<br>
+<li class="books"><a href="Old testament/Lamentations (Old).html" class="refresh" target="Bookreader"><b>Lamentations</b></a></li>
+<br>
+<li class="books"><a href="Old testament/Ezekiel (Old).html" class="refresh" target="Bookreader"><b>Ezekiel</b></a></li>
+<br>
+<li class="books"><a href="Old testament/Daniel (Old).html" class="refresh" target="Bookreader"><b>Daniel</b></a></li>
+<br>
+<li class="books"><a href="Old testament/Hosea (Old).html" class="refresh" target="Bookreader"><b>Hosea</b></a></li>
+<br>
+<li class="books"><a href="Old testament/Joel (Old).html" class="refresh" target="Bookreader"><b>Joel</b></a></li>
+<br>
+<li class="books"><a href="Old testament/Amos (Old).html" class="refresh" target="Bookreader"><b>Amos</b></a></li>
+<br>
+<li class="books"><a href="Old testament/Obadiah (Old).html" class="refresh" target="Bookreader"><b>Obadiah</b></a></li>
+<br>
+<li class="books"><a href="Old testament/Jonah (Old).html" class="refresh" target="Bookreader"><b>Jonah</b></a></li>
+<br>
+<li class="books"><a href="Old testament/Micah (Old).html" class="refresh" target="Bookreader"><b>Micah</b></a></li>
+<br>
+<li class="books"><a href="Old testament/Nahum (Old).html" class="refresh" target="Bookreader"><b>Nahum</b></a></li>
+<br>
+<li class="books"><a href="Old testament/Habakkuk (Old).html" class="refresh" target="Bookreader"><b>Habakkuk</b></a></li>
+<br>
+<li class="books"><a href="Old testament/Zephaniah (Old).html" class="refresh" target="Bookreader"><b>Zephaniah</b></a></li>
+<br>
+<li class="books"><a href="Old testament/Haggai (Old).html" class="refresh" target="Bookreader"><b>Haggai</b></a></li>
+<br>
+<li class="books"><a href="Old testament/Zechariah (Old).html" class="refresh" target="Bookreader"><b>Zechariah</b></a></li>
+<br>
+<li class="books"><a href="Old testament/Malachi (Old).html" class="refresh" target="Bookreader"><b>Malachi</b></a></li>
+<br>
+
+</ul>
+</div>
+
+<div id="mySidenav2" class="sidenav2">
+  <a href="javascript:void(0)" class="closebtn2" onclick="closeNav2()"><img src="images/close.png"></a>
+<hr>
+<h1>Search</h1>	<input id="searchbar2" onkeyup="search_books2()" type="text" name="search" placeholder="Search new testament..">
+<p class="psearch"><b>Note: </b>If searched and not seen, try scrolling down</p> 
+<hr>
+<ul id='list'>
+<li class="books2"><a href="New testament/Matthew (New).html" class="refresh" target="Bookreader"><b>Matthew</b></a></li>
+<br>
+<li class="books2"><a href="New testament/Mark (New).html" class="refresh" target="Bookreader"><b>Mark</b></a></li>
+<br>
+<li class="books2"><a href="New testament/Luke (New).html" class="refresh" target="Bookreader"><b>Luke</b></a></li>
+<br>
+<li class="books2"><a href="New testament/John (New).html" class="refresh" target="Bookreader"><b>John</b></a></li>
+<br>
+<li class="books2"><a href="New testament/Acts (New).html" class="refresh" target="Bookreader"><b>Acts</b></a></li>
+<br>
+<li class="books2"><a href="New testament/Romans (New).html" class="refresh" target="Bookreader"><b>Romans</b></a></li>
+<br>
+<li class="books2"><a href="New testament/1 Corinthians (New).html" class="refresh" target="Bookreader"><b>1 Corinthians</b></a></li>
+<br>
+<li class="books2"><a href="New testament/2 Corinthians (New).html" class="refresh" target="Bookreader"><b>2 Corinthians</b></a></li>
+<br>
+<li class="books2"><a href="New testament/Galatians (New).html" class="refresh" target="Bookreader"><b>Galatians</b></a></li>
+<br>
+<li class="books2"><a href="New testament/Ephesians (New).html" class="refresh" target="Bookreader"><b>Ephesians</b></a></li>
+<br>
+<li class="books2"><a href="New testament/Philippians (New).html" class="refresh" target="Bookreader"><b>Philippians</b></a></li>
+<br>
+<li class="books2"><a href="New testament/Colossians (New).html" class="refresh" target="Bookreader"><b>Colossians</b></a></li>
+<br>
+<li class="books2"><a href="New testament/1 Thessalonians (New).html" class="refresh" target="Bookreader"><b>1 Thessalonians</b></a></li>
+<br>
+<li class="books2"><a href="New testament/2 Thessalonians (New).html" class="refresh" target="Bookreader"><b>2 Thessalonians</b></a></li>
+<br>
+<li class="books2"><a href="New testament/1 Timothy (New).html" class="refresh" target="Bookreader"><b>1 Timothy</b></a></li>
+<br>
+<li class="books2"><a href="New testament/2 Timothy (New).html" class="refresh" target="Bookreader"><b>2 Timothy</b></a></li>
+<br>
+<li class="books2"><a href="New testament/Titus (New).html" class="refresh" target="Bookreader"><b>Titus</b></a></li>
+<br>
+<li class="books2"><a href="New testament/Philemon (New).html" class="refresh" target="Bookreader"><b>Philemon</b></a></li>
+<br>
+<li class="books2"><a href="New testament/Hebrews (New).html" class="refresh" target="Bookreader"><b>Hebrews</b></a></li>
+<br>
+<li class="books2"><a href="New testament/James (New).html" class="refresh" target="Bookreader"><b>James</b></a></li>
+<br>
+<li class="books2"><a href="New testament/1 Peter (New).html" class="refresh" target="Bookreader"><b>1 Peter</b></a></li>
+<br>
+<li class="books2"><a href="New testament/2 Peter (New).html" class="refresh" target="Bookreader"><b>2 Peter</b></a></li>
+<br>
+<li class="books2"><a href="New testament/1 John (New).html" class="refresh" target="Bookreader"><b>1 John</b></a></li>
+<br>
+<li class="books2"><a href="New testament/2 John (New).html" class="refresh" target="Bookreader"><b>2 John</b></a></li>
+<br>
+<li class="books2"><a href="New testament/3 John (New).html" class="refresh" target="Bookreader"><b>3 John</b></a></li>
+<br>
+<li class="books2"><a href="New testament/Jude (New).html" class="refresh" target="Bookreader"><b>Jude</b></a></li>
+<br>
+<li class="books2"><a href="New testament/Revelation (New).html" class="refresh" target="Bookreader"><b>Revelation</b></a></li>
+<br>
+</ul>
+</div>
+
+<center>
+<div>
+<iframe name="Bookreader">
+</iframe>
+</div>
 </center>
+<br>
+<footer><b>&copy; Copyright 2021 Mycode</b></footer>
+</div>
+</div>
 </body>
-<hr>
-<footer><b>&copy; Copyright 2020 Mycode</b></footer>
 </html>
 
 

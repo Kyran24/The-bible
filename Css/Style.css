@@ -1,24 +1,6 @@
-td{
-display: table-cell;
-border :1px solid lightgreen;
-padding:3px;
-}
-
-table {
-background-color:white;
-border:20px solid lightgreen;
-padding:3px;
-display:table;
-}
-
-th {
-width:35%;
+a {
+text-decoration:none;
 color:red;
-font-family:ink free;
-font-size:25px;
-background-color:lightblue;
-border:10px solid lightgreen;
-padding:3px;
 }
 
 .glow {
@@ -29,10 +11,10 @@ padding:3px;
 
 @-webkit-keyframes glow {
   from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff,
+    text-shadow: 0 0 10px white, 0 0 20px white,
   }
   to {
-    text-shadow: 0 0 20px #fff, 0 0 30px red;
+    text-shadow: 0 0 20px yellow, 0 0 30px green;
   }
 }
 
@@ -80,12 +62,6 @@ font-family:ink free;
 color:red;
 }
 
-h2 {
-text-align:center;
-font-family:ink free;
-color:red;
-}
-
 .img {
   border-radius: 16%;
   border:10px solid red;
@@ -97,9 +73,9 @@ body {
 background:url('../Images/Background.png');
 }
 
-div {
+.divbodyabout {
 background-color:lightyellow;
-border:double;
+border:dashed;
 border-radius: 50px;
 }
 
@@ -139,16 +115,131 @@ border-radius: 5px;
   background: #b30000; 
 }
 
-.large {
+.biblelarge {
 text-align:center;
 font-family:ink free;
 color:red;
 font-size:50px;
 }
 
-.medium {
+.divabout {
 text-align:center;
 font-family:ink free;
-color:skyblue;
+color:blue;
 font-size:25px;
 }
+
+
+#searchbar{ 
+	padding:15px; 
+	border-radius: 10px; 
+    border-color:lightgreen blue red orange;
+} 
+
+input[type=text] {
+    color:red;
+    font-size:20px; 
+    font-family:ink free;
+	width: 30%; 
+	-webkit-transition: width 0.15s ease-in-out; 
+	transition: width 1s ease-in-out; 
+} 
+
+input[type=text]:focus { 
+	width: 50%; 
+}
+
+#list{ 
+color:orange;
+	font-size: 1.5em;
+margin-left: 10px  
+} 
+
+.books{ 
+display:list-item;	 
+} 
+
+.sidenav {
+  height: 100%;
+  width: 0; 
+  position: fixed;
+  z-index: 1;
+  top: 0; 
+  left: 0;
+  overflow-x: hidden;
+  padding-top: 21px;
+  transition: 0.5s;
+  background-color:cyan; 
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 1px;
+  right:10px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+
+
+#searchbar2{ 
+	padding:15px; 
+	border-radius: 10px; 
+    border-color:lightgreen blue red orange;
+}
+
+#list{ 
+color:orange;
+	font-size: 1.5em;
+margin-left: 10px  
+} 
+
+.books2{ 
+display:list-item;	 
+} 
+
+.sidenav2 {
+  height: 100%;
+  width: 0; 
+  position: fixed;
+  z-index: 1;
+  top: 0; 
+  left: 0;
+  overflow-x: hidden;
+  padding-top: 21px;
+  transition: 0.5s;
+  background-color:cyan; 
+}
+
+.sidenav2 .closebtn2 {
+  position: absolute;
+  top: 1px;
+  right:10px;
+  margin-left: 50px;
+}
+
+#main2 {
+  transition: margin-left .5s;
+  padding: 20px;
+} 
+
+.psearch {
+text-align:center;
+font-family:ink free;
+color:purple;
+}
+
+iframe {
+width:500px; 
+height:500px; 
+border-color:red green blue yellow;
+border-width:10px;
+background:url('../Images/img10.jpg');
+}
+
+@media (max-width: 660px) { 
+			iframe { 
+				width: 250px; 
