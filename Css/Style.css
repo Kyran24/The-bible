@@ -3,56 +3,55 @@ text-decoration:none;
 color:red;
 }
 
-.glow {
-  -webkit-animation: glow 1s ease-in-out infinite alternate;
-  -moz-animation: glow 1s ease-in-out infinite alternate;
-  animation: glow 1s ease-in-out infinite alternate;
-}
-
-@-webkit-keyframes glow {
-  from {
-    text-shadow: 0 0 10px white, 0 0 20px white,
-  }
-  to {
-    text-shadow: 0 0 20px yellow, 0 0 30px green;
-  }
-}
-
-.refresh {
+.buttons {
   font-family:ink free;
   background-color: lightgreen;
   border: none;
   color: red;
-  padding: 10px 20px;
+  padding:5px;
   font-size: 20px;
 cursor: pointer;
-  border-radius: 16px;
-text-decoration: none;
+  border-radius: 7px;
   display: inline-block;
 text-align: center;
+font-weight:bold;
 }
 
-.refresh:hover {
+.buttons:hover {
   background-color:skyblue;
 }
 
-#myBtn {
-  display: none;
-  position: fixed;
-  bottom: 20px;
-  right: 30px;
-  z-index: 99;
-  border: none;
-  outline: none;
-  background-color: red; 
-  color: blue;
+.searchbooks {
+  font-family:ink free;
+  color: red;
+  font-size: 20px;
   cursor: pointer;
-  padding: 15px; 
-  border-radius: 10px; 
-  font-size: 18px; 
+  text-align: center;
+  font-weight:bold;
 }
 
-#myBtn:hover {
+.searchbooks:hover {
+color:darkred;
+}
+
+#Totop {
+  display: none;
+  position: fixed;
+  bottom: 5px;
+  right: 5px;
+  z-index: 9;
+  border: none;
+  outline: none;
+  background-color:blue; 
+  color: white;
+  cursor: pointer;
+  padding: 10px; 
+  border-radius: 10px; 
+  font-size: 30px;
+  font-weight:bold;  
+}
+
+#Totop:hover {
   background-color:grey;
 }
 
@@ -60,6 +59,7 @@ h1 {
 text-align:center;
 font-family:ink free;
 color:red;
+font-weight:bold;
 }
 
 .img {
@@ -71,18 +71,14 @@ color:red;
 
 body {
 background:url('../Images/Background.png');
-}
-
-.divbodyabout {
-background-color:lightyellow;
-border:dashed;
-border-radius: 50px;
+margin:0;
 }
 
 footer {
 text-align:center;
 font-family:ink free;
-color:red;
+color:lime;
+font-weight:bold;
 }
 
 pre {
@@ -90,6 +86,7 @@ white-space: pre-wrap;
 font-family:ink free;
 color:green;
 font-size:20px;
+font-weight:bold;
 }
 
 hr {
@@ -98,7 +95,7 @@ border-radius: 5px;
 }
 
 ::-webkit-scrollbar {
-  width: 18px;
+  width: 15px;
 }
 
 ::-webkit-scrollbar-track {
@@ -107,19 +104,20 @@ border-radius: 5px;
 }
  
 ::-webkit-scrollbar-thumb {
-  background:lightblue; 
+  background:red; 
   border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #b30000; 
+  background: green; 
 }
 
 .biblelarge {
 text-align:center;
 font-family:ink free;
-color:red;
+color:lemonchiffon;
 font-size:50px;
+font-weight:bold;
 }
 
 .divabout {
@@ -127,119 +125,153 @@ text-align:center;
 font-family:ink free;
 color:blue;
 font-size:25px;
+font-weight:bold;
+background-color:lightyellow;
+border:3px solid grey;
+border-radius: 50px;
+}
+
+.header {
+  padding: 10px 16px;
+  background: #555;
+  color: #f1f1f1;
+  text-align:center;
 }
 
 
-#searchbar{ 
-	padding:15px; 
-	border-radius: 10px; 
-    border-color:lightgreen blue red orange;
-} 
-
-input[type=text] {
-    color:red;
-    font-size:20px; 
-    font-family:ink free;
-	width: 30%; 
-	-webkit-transition: width 0.15s ease-in-out; 
-	transition: width 1s ease-in-out; 
-} 
-
-input[type=text]:focus { 
-	width: 50%; 
+* {
+  box-sizing: border-box;
 }
 
-#list{ 
-color:orange;
-	font-size: 1.5em;
-margin-left: 10px  
-} 
-
-.books{ 
-display:list-item;	 
-} 
-
-.sidenav {
-  height: 100%;
-  width: 0; 
-  position: fixed;
-  z-index: 1;
-  top: 0; 
-  left: 0;
-  overflow-x: hidden;
-  padding-top: 21px;
-  transition: 0.5s;
-  background-color:cyan; 
+#Inputold {
+  background-image: url('../images/searchicon.png');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  width:100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border-color:red blue tomato lime;
+  margin-bottom: 5px;
+  border-radius:10px;
 }
 
-.sidenav .closebtn {
-  position: absolute;
-  top: 1px;
-  right:10px;
-  margin-left: 50px;
+#Tableold {
+  border-collapse: collapse;
+  width:100%;
+  border: 1px solid teal;
+  font-size: 18px;
 }
 
-#main {
-  transition: margin-left .5s;
-  padding: 20px;
+#Tableold th {
+  text-align:center;
+  padding: 3px;
+  color: green;
+  font-family:ink free;
+  font-weight:bold;
+  font-size:25px;
+  width:60px;
+}
+
+#Tableold td {
+	text-align:left;
+	padding:5px;
+	color:red;
+	font-family:ink free;
+	font-weight:bold;
+}
+
+#Tableold tr {
+  border-bottom: 1px solid midnightblue;
+}
+
+#Tableold tr.header {
+  background-color: #f1f1f1;
+}
+
+#Tableold tr:hover {
+background-color:seashell;
 }
 
 
-#searchbar2{ 
-	padding:15px; 
-	border-radius: 10px; 
-    border-color:lightgreen blue red orange;
+#Inputnew {
+  background-image: url('../images/searchicon.png');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  width:100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border-color:red blue tomato lime;
+  margin-bottom: 5px;
+  border-radius:10px;
 }
 
-#list{ 
-color:orange;
-	font-size: 1.5em;
-margin-left: 10px  
-} 
-
-.books2{ 
-display:list-item;	 
-} 
-
-.sidenav2 {
-  height: 100%;
-  width: 0; 
-  position: fixed;
-  z-index: 1;
-  top: 0; 
-  left: 0;
-  overflow-x: hidden;
-  padding-top: 21px;
-  transition: 0.5s;
-  background-color:cyan; 
+#Tablenew {
+  border-collapse: collapse;
+  width:100%;
+  border: 1px solid teal;
+  font-size: 18px;
 }
 
-.sidenav2 .closebtn2 {
-  position: absolute;
-  top: 1px;
-  right:10px;
-  margin-left: 50px;
+#Tablenew th {
+  text-align:center;
+  padding: 3px;
+  color: green;
+  font-family:ink free;
+  font-weight:bold;
+  font-size:25px;
+  width:60px;
 }
 
-#main2 {
-  transition: margin-left .5s;
-  padding: 20px;
-} 
-
-.psearch {
-text-align:center;
-font-family:ink free;
-color:purple;
+#Tablenew td {
+	text-align:left;
+	padding:5px;
+	color:red;
+	font-family:ink free;
+	font-weight:bold;
 }
 
-iframe {
-width:500px; 
-height:500px; 
-border-color:red green blue yellow;
-border-width:10px;
-background:url('../Images/img10.jpg');
+#Tablenew tr {
+  border-bottom: 1px solid midnightblue;
 }
 
-@media (max-width: 660px) { 
-			iframe { 
-				width: 250px; 
+#Tablenew tr.header {
+  background-color: #f1f1f1;
+}
+
+#Tablenew tr:hover {
+background-color:seashell;
+}
+	
+.searchdiv {
+	width:50%;
+	height:500px;
+	line-height:2em;
+	overflow:auto;
+	padding:5px;
+	top:120px;
+	border:4px solid grey;
+	position:absolute;
+}
+
+.bodydiv {
+	top:580px;
+	position:relative;
+}
+
+.left {
+  left:0px;
+}
+
+.right {
+  right:0px;
+}
+
+@media (min-width:300px) and (max-width:720px) {
+.searchdiv {
+	position:inherit;
+	width:85%;
+}
+.bodydiv {
+	position:inherit;
+}
+}
