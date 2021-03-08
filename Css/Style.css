@@ -4,30 +4,30 @@ color:red;
 }
 
 .buttons {
-  font-family:ink free;
-  background-color: lightgreen;
-  border: none;
-  color: red;
-  padding:5px;
-  font-size: 20px;
-cursor: pointer;
-  border-radius: 7px;
-  display: inline-block;
-text-align: center;
+font-family:ink free;
+background-color: lightgreen;
+border:none;
+color:red;
+padding:5px;
+font-size:20px;
+cursor:pointer;
+border-radius:7px;
+display:inline-block;
+text-align:center;
 font-weight:bold;
 }
 
 .buttons:hover {
-  background-color:skyblue;
+background-color:skyblue;
 }
 
 .searchbooks {
-  font-family:ink free;
-  color: red;
-  font-size: 20px;
-  cursor: pointer;
-  text-align: center;
-  font-weight:bold;
+font-family:ink free;
+color:red;
+font-size:20px;
+cursor:pointer;
+text-align:center;
+font-weight:bold;
 }
 
 .searchbooks:hover {
@@ -35,24 +35,24 @@ color:darkred;
 }
 
 #Totop {
-  display: none;
-  position: fixed;
-  bottom: 5px;
-  right: 5px;
-  z-index: 9;
-  border: none;
-  outline: none;
-  background-color:blue; 
-  color: white;
-  cursor: pointer;
-  padding: 10px; 
-  border-radius: 10px; 
-  font-size: 30px;
-  font-weight:bold;  
+display:none;
+position:fixed;
+bottom:5px;
+right:5px;
+z-index:9;
+border:none;
+outline:none;
+background-color:blue; 
+color:white;
+cursor:pointer;
+padding:10px; 
+border-radius:10px; 
+font-size:30px;
+font-weight:bold;  
 }
 
 #Totop:hover {
-  background-color:grey;
+background-color:grey;
 }
 
 h1 {
@@ -63,10 +63,10 @@ font-weight:bold;
 }
 
 .img {
-  border-radius: 16%;
-  border:10px solid red;
-  width:100px;
-  height:80px;
+border-radius:16%;
+border:10px solid red;
+width:100px;
+height:80px;
 }
 
 body {
@@ -82,7 +82,7 @@ font-weight:bold;
 }
 
 pre {
-white-space: pre-wrap;
+white-space:pre-wrap;
 font-family:ink free;
 color:green;
 font-size:20px;
@@ -90,26 +90,26 @@ font-weight:bold;
 }
 
 hr {
-border: 5px solid blue;
-border-radius: 5px;
+border:5px solid blue;
+border-radius:5px;
 }
 
 ::-webkit-scrollbar {
-  width: 15px;
+width:15px;
 }
 
 ::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px red; 
-  border-radius: 10px;
+box-shadow:inset 0 0 5px red; 
+border-radius:10px;
 }
  
 ::-webkit-scrollbar-thumb {
-  background:red; 
-  border-radius: 10px;
+background:red; 
+border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: green; 
+background:green; 
 }
 
 .biblelarge {
@@ -128,114 +128,112 @@ font-size:25px;
 font-weight:bold;
 background-color:lightyellow;
 border:3px solid grey;
-border-radius: 50px;
+border-radius:50px;
 }
 
 .header {
-  padding: 10px 16px;
-  background: #555;
-  color: #f1f1f1;
-  text-align:center;
+padding:10px 16px;
+background:#555;
+color:#f1f1f1;
+text-align:center;
 }
 
-
 * {
-  box-sizing: border-box;
+box-sizing:border-box;
 }
 
 #Inputold {
-  background-image: url('../images/searchicon.png');
-  background-position: 10px 10px;
-  background-repeat: no-repeat;
-  width:100%;
-  font-size: 16px;
-  padding: 12px 20px 12px 40px;
-  border-color:red blue tomato lime;
-  margin-bottom: 5px;
-  border-radius:10px;
+background-image:url('../images/searchicon.png');
+background-position:10px 10px;
+background-repeat:no-repeat;
+width:100%;
+font-size:16px;
+padding:12px 20px 12px 40px;
+border-color:red blue tomato lime;
+margin-bottom:5px;
+border-radius:10px;
 }
 
 #Tableold {
-  border-collapse: collapse;
-  width:100%;
-  border: 1px solid teal;
-  font-size: 18px;
+border-collapse:collapse;
+width:100%;
+border:1px solid teal;
+font-size:18px;
 }
 
 #Tableold th {
-  text-align:center;
-  padding: 3px;
-  color: green;
-  font-family:ink free;
-  font-weight:bold;
-  font-size:25px;
-  width:60px;
+text-align:center;
+padding:3px;
+color:green;
+font-family:ink free;
+font-weight:bold;
+font-size:25px;
+width:60px;
 }
 
 #Tableold td {
-	text-align:left;
-	padding:5px;
-	color:red;
-	font-family:ink free;
-	font-weight:bold;
+text-align:left;
+padding:5px;
+color:red;
+font-family:ink free;
+font-weight:bold;
 }
 
 #Tableold tr {
-  border-bottom: 1px solid midnightblue;
+border-bottom:1px solid midnightblue;
 }
 
 #Tableold tr.header {
-  background-color: #f1f1f1;
+background-color:#f1f1f1;
 }
 
 #Tableold tr:hover {
 background-color:seashell;
 }
 
-
 #Inputnew {
-  background-image: url('../images/searchicon.png');
-  background-position: 10px 10px;
-  background-repeat: no-repeat;
-  width:100%;
-  font-size: 16px;
-  padding: 12px 20px 12px 40px;
-  border-color:red blue tomato lime;
-  margin-bottom: 5px;
-  border-radius:10px;
+background-image:url('../images/searchicon.png');
+background-position:10px 10px;
+background-repeat:no-repeat;
+width:100%;
+font-size:16px;
+padding:12px 20px 12px 40px;
+border-color:red blue tomato lime;
+margin-bottom:5px;
+border-radius:10px;
 }
 
 #Tablenew {
-  border-collapse: collapse;
-  width:100%;
-  border: 1px solid teal;
-  font-size: 18px;
+border-collapse:collapse;
+width:100%;
+border:1px solid teal;
+font-size:18px;
 }
 
 #Tablenew th {
-  text-align:center;
-  padding: 3px;
-  color: green;
-  font-family:ink free;
-  font-weight:bold;
-  font-size:25px;
-  width:60px;
+text-align:center;
+padding: 3px;
+color:green;
+font-family:ink free;
+font-weight:bold;
+font-size:25px;
+width:60px;
 }
 
 #Tablenew td {
-	text-align:left;
-	padding:5px;
-	color:red;
-	font-family:ink free;
-	font-weight:bold;
+text-align:left;
+padding:5px;
+color:red;
+font-family:ink free;
+font-weight:bold;
 }
 
 #Tablenew tr {
-  border-bottom: 1px solid midnightblue;
+  border-bottom:1px solid midnightblue;
 }
 
 #Tablenew tr.header {
-  background-color: #f1f1f1;
+  background-color:#f1f1f1;
 }
 
 #Tablenew tr:hover {
@@ -243,35 +241,35 @@ background-color:seashell;
 }
 	
 .searchdiv {
-	width:50%;
-	height:500px;
-	line-height:2em;
-	overflow:auto;
-	padding:5px;
-	top:120px;
-	border:4px solid grey;
-	position:absolute;
+width:50%;
+height:500px;
+line-height:2em;
+overflow:auto;
+padding:5px;
+top:120px;
+border:4px solid grey;
+position:absolute;
 }
 
-.bodydiv {
-	top:580px;
-	position:relative;
+.footerdiv {
+top:580px;
+position:relative;
 }
 
 .left {
-  left:0px;
+left:0px;
 }
 
 .right {
-  right:0px;
+right:0px;
 }
 
 @media (min-width:300px) and (max-width:720px) {
 .searchdiv {
-	position:inherit;
-	width:85%;
+position:inherit;
+width:85%;
 }
-.bodydiv {
-	position:inherit;
+.footerdiv {
+position:inherit;
 }
 }

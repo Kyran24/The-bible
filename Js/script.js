@@ -17,7 +17,6 @@ function searchold() {
   }
 }
 
-
 function searchnew() {
   var input, filter, table, tr, td, i, txtValue;
   input = document.getElementById("Inputnew");
@@ -36,8 +35,6 @@ function searchnew() {
     }       
   }
 }
-
-
 
 var mylocation="./About.html"
 var winheight=100
