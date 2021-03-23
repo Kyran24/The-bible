@@ -6,8 +6,7 @@ Tel--- +2347040501048
 
 Mycode email----- mycode12345678@gmail.com
 
-Email----- Ebubekyran@gmail.com
-           Kyranebube@gmail.com
+Email----- kyranebube@gmail.com
 
 Address---- Plot 146 sultan dasuki road, phase 2 site 2, kubwa-Abuja, Nigeria.
 
