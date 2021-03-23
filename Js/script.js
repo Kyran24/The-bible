@@ -36,7 +36,7 @@ function searchnew() {
   }
 }
 
-var mylocation="./About.html"
+var mylocation="pages/About.html"
 var winheight=100
 var winsize=100
 var x=5
